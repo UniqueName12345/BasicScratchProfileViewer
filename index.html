@@ -38,10 +38,9 @@
     <script>
         // once username is submitted
         $('#usernameInput').on('submit', function(e){
-            // get username
+            e.preventDefault();
             var username = $('#usernameInput').val();
-            // use username to get info
-            useUsernameToGetInfo(username);
+            getInfo(username);
         })
     </script>
 
